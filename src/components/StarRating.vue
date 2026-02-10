@@ -3,12 +3,10 @@
     <span
       v-for="i in 5"
       :key="i"
-      :class="['star relative cursor-pointer transition-all duration-200 ease-in-out', {
+      :class="['star relative transition-all duration-200 ease-in-out', {
         'text-yellow-400': i <= fullStars,
-        'text-gray-300': i > fullStars,
-        'text-gray-300': i === fullStars + 1 && !hasHalfStar, 
+        'text-gray-300': i > fullStars && i !== fullStars + 1,
       }]"
-      @click="setRating(i)"
     >
       ★
       <span
@@ -22,7 +20,7 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
+import { computed } from 'vue';
 
 const props = defineProps({
   rating: {
@@ -31,6 +29,7 @@ const props = defineProps({
   }
 });
 
-const fullStars = Math.floor(props.rating); 
-const hasHalfStar = props.rating - fullStars >= 0.5; 
+// Make reactive computed properties
+const fullStars = computed(() => Math.floor(props.rating));
+const hasHalfStar = computed(() => props.rating - fullStars.value >= 0.5);
 </script>

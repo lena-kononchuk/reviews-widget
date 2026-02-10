@@ -1,66 +1,25 @@
-## Getting Started
+# Google Reviews Widget
 
-1. **Clone the project repository.**
+Interactive Google Reviews widget component built with Vue 3. Display customer reviews with ratings, add new reviews, and switch between languages.
 
-    Clone the project repository with the following command:
+🔗 **[Live Demo](https://lena-kononchuk.github.io/vue-spa-task/)**
 
-    ```bash
-    git clone https://github.com/lena-kononchuk/vue-spa-task
-    ```
+## Features
 
-2. **Install dependencies.**
+- ⭐ **Star Rating System** - Visual 5-star rating display
+- 📊 **Average Rating** - Automatic calculation from all reviews
+- 📝 **Add Reviews** - Modal form to submit new reviews
+- 🌍 **Bilingual** - Switch between English and Ukrainian
+- 📱 **Responsive Design** - Works on all devices
+- 🎨 **Modern UI** - Clean interface with Tailwind CSS
+- 🔌 **MockAPI Backend** - Test backend for review management
 
-    Install the necessary dependencies:
+## Tech Stack
 
-    ```bash
-    npm install
-    ```
-
-3. **Start the local server.**
-
-    Start the local server with the following command:
-
-    ```bash
-    npm run dev
-    ```
-
-4. **Visit the application.**
-
-    You can view the project locally at localhost.
-
-### Using MockAPI
-
-To work with reviews in the project, [MockAPI](https://mockapi.io/) is used, which provides a test backend.
-
-
-
-### Using MockAPI
-
-    To work with reviews in the project, [MockAPI](https://mockapi.io/) is used, which provides a test backend.
-
-**Main endpoints:**
-
-
-- GET /reviews
-Gets a list of reviews.
-    ```bash
-      Sample response:
-      [
-        {
-          "id": "1",
-          "name": "Jane Doe",
-          "reviews": "Awesome!",
-          "rating": 4
-        },
-      ]
-    ```
-
-- POST /reviews
-Adds a new review.
-    ```bash
-      Sample response:
-        {
-          "name": "Jane Doe",
-          "reviews": "Awesome!",
-          }
-    ```
+- **Vue 3** - Composition API
+- **Vue Router** - Client-side routing
+- **Vue I18n** - Internationalization (EN/UK)
+- **Vite** - Build tool and dev server
+- **Tailwind CSS** - Utility-first styling
+- **Axios** - HTTP client for API requests
+- **MockAPI** - Mock REST API backend
