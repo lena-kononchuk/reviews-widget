@@ -2,7 +2,7 @@
 
 Interactive Google Reviews widget component built with Vue 3. Display customer reviews with ratings, add new reviews, and switch between languages.
 
-🔗 **[Live Demo](https://lena-kononchuk.github.io/vue-spa-task/)**
+🔗 **[Live Demo](https://lena-kononchuk.github.io/reviews-widget/)**
 
 ## Features
 
